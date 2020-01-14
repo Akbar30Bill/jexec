@@ -1,0 +1,6 @@
+#!/bin/bash
+
+FILE=$1
+FILE=${FILE%.*}
+echo "#!/usr/bin/java -jar" > $FILE
+cat $1 > $FILE
